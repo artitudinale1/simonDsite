@@ -31,3 +31,6 @@ HTML5, CSS3,  SASS v 3.4.5
 
  - Cross-browser testing
  - Django CMS implementation
+
+
+<b>PLESE IF YOU EXPERIMENT ANY BUGS/ERRORS/PROBLEMS TESITNG OR CHECKING OUT THIS POJECT</b> report it though GITHUB or @ alex.garulli@gmail.com
