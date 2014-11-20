@@ -33,4 +33,4 @@ HTML5, CSS3,  SASS v 3.4.5
  - Django CMS implementation
 
 
-<b>PLESE IF YOU EXPERIMENT ANY BUGS/ERRORS/PROBLEMS TESITNG OR CHECKING OUT THIS POJECT</b> report it though GITHUB or @ alex.garulli@gmail.com
+<b>PLESE IF YOU EXPERIMENT ANY BUGS/ERRORS/PROBLEMS TESITNG OR CHECKING OUT THIS PROJECT</b> report it though GITHUB or @ alex.garulli@gmail.com
