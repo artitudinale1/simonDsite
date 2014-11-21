@@ -1,6 +1,6 @@
 #<b>Simon D portfolio as Designer/Artworker.#
 
-##<b>BRIEF/BACKGOUND PROJECT</b>##
+##<b>BRIEF/BACKGROUND PROJECT</b>##
 
 This is online Simon's online portfolio as designer/artworker.
 
