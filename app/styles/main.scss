@@ -140,7 +140,7 @@ $headings:  'Merriweather', serif;
 
 [class*='col-'] {
   width:100%;
-  margin: 0 0 30px 0;
+  margin: 20px 0 15px 0;
   .grid &:last-of-type {
     padding-right: 0;
     }
@@ -240,7 +240,7 @@ header {
   
 }
 #content {
-  padding: 40px 10px;
+  padding: 0 10px;
   padding-bottom:20px;   /* Height of the footer element */
   margin:0 auto;
 
@@ -312,7 +312,8 @@ nav ul {
   li{
     background:$gray;
     list-style: none;
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid $orange;
+    border-top: 2px solid $orange;
     padding: 15px 0 15px;
     width:100%;
     position:relative;
@@ -321,18 +322,22 @@ nav ul {
       display:inline-block;
       width:auto;
       border:none;
-      padding:0 30px;
+      padding:0 20px;
       top:0;
     }
+
+  }
+  li:nth-child(even){
+    border:none;
   }
   li a {
     color:white;
     text-decoration: none;
     margin: 0 8px;
-    margin: 0px 10px;
+    margin: 0px 10px 0 30px;
     position: relative;
    @include respond-wrapper-fallback (tablet, old-ie&){
-    top:10px;
+    top:15px;
   }
    
   }
@@ -342,7 +347,7 @@ nav ul {
     @include b4-after-icon(35px, 48px, 90px, 0px, 0.5% 3% );
     @include rollover(0.5% 3%);
     @include respond-wrapper-fallback (tablet, old-ie&){
-        @include b4-after-icon(35px, 48px, -9px, 2px, 0.5% 3% )
+        @include b4-after-icon(35px, 48px, 0, 2px, 0.5% 3% )
     }
 }
 
@@ -378,10 +383,10 @@ nav ul {
   }
 }
 .active{
-  background:#faaf3a;
+  background:$orange;
 }
 .active > a {
-    color:#444444;
+    color:$gray;
 }
 
 #about .active:before{
