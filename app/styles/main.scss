@@ -107,6 +107,16 @@ $headings:  'Merriweather', serif;
     background-position: $background-position;
 }
 
+@mixin rollover ( $background-position){
+    background-position: $background-position;
+    outline: none;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
 
 //GRID
 
@@ -287,25 +297,27 @@ nav ul {
   text-align: center;
   font-family: $headings;
   text-transform: capitalize;
-  padding: 0px 0 40px 0;
+  padding: 0;
   margin: 0;
   position:relative;
   z-index: 1000;
+
   @include respond-wrapper-fallback (tablet, old-ie&){
     padding: 0;
     float:right;
-    padding-top: 15px;
+    height: 50px;
+    padding-bottom: 40px;
    
   }
   li{
     background:$gray;
     list-style: none;
     border-bottom: 2px solid orange;
-    padding: 30px 0 30px;
+    padding: 15px 0 15px;
     width:100%;
     position:relative;
-    top:40px;
-     @include respond-wrapper-fallback (tablet, old-ie&){
+    height:50px;
+    @include respond-wrapper-fallback (tablet, old-ie&){
       display:inline-block;
       width:auto;
       border:none;
@@ -317,29 +329,46 @@ nav ul {
     color:white;
     text-decoration: none;
     margin: 0 8px;
+    margin: 0px 10px;
+    position: relative;
+   @include respond-wrapper-fallback (tablet, old-ie&){
+    top:10px;
+  }
    
   }
 }
 
   li:before{
-    @include b4-after-icon(35px, 48px, 90px, 16px, 0% 3% );
-
+    @include b4-after-icon(35px, 48px, 90px, 0px, 0.5% 3% );
+    @include rollover(0.5% 3%);
     @include respond-wrapper-fallback (tablet, old-ie&){
-@include b4-after-icon(35px, 48px, -15px, -12px, 0% 3% )
-}
+        @include b4-after-icon(35px, 48px, -9px, 2px, 0.5% 3% )
+    }
 }
 
     li:nth-child(2):before{
-    background-position: 6% 3%;
+     @include rollover(6% 3%);
   }
     li:nth-child(3):before{
-    background-position: 11% 3%;
+     @include rollover(11% 3%);
   }
+
+
+ li:first-child:hover:before {
+    @include rollover(0.5% 12%);
+  }
+ li:nth-child(2):hover:before {
+    @include rollover(6% 11%);
+  }
+ li:nth-child(3):hover:before {
+ @include rollover(11% 11.5%);
+  }
+
 
 
 #logo{
   
-   padding: 10px 0 10px 30px;
+   padding: 5px 0 5px 10px;
    a {
     font-family: 'Merriweather', serif;
     color:white;
@@ -353,7 +382,17 @@ nav ul {
 }
 .active > a {
     color:#444444;
+}
 
+#about .active:before{
+  @include rollover(0.5% 18%);
+}
+
+#work .active:before{
+  @include rollover(6% 18%);
+}
+#letstalk .active:before{
+  @include rollover(11% 18%);
 }
 
 #mobile_menu{
@@ -782,15 +821,14 @@ right: 0px;
   }
 
 
+#guidelines{position:absolute; top:0; z-index: 2000}
 
-
-* { outline: 2px dotted red ;     -webkit-box-sizing:  border-box;
-       box-sizing:  border-box;}
-* * { outline: 2px dotted green }
-* * * { outline: 2px dotted orange }
-* * * * { outline: 2px dotted blue }
-* * * * * { outline: 1px solid red }
-* * * * * * { outline: 1px solid green }
-* * * * * * * { outline: 1px solid orange }
-* * * * * * * * { outline: 1px solid blue }
+.outline * { outline: 2px dotted red ;}
+.outline * * { outline: 2px dotted green }
+.outline * * * { outline: 2px dotted orange }
+.outline * * * * { outline: 2px dotted blue }
+.outline * * * * * { outline: 1px solid red }
+.outline * * * * * * { outline: 1px solid green }
+.outline * * * * * * * { outline: 1px solid orange }
+.outline * * * * * * * * { outline: 1px solid blue }
 

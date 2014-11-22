@@ -1,4 +1,13 @@
  $( document ).ready(function() {
+
+$( "#guidelines" ).click(function()  {
+	
+ 	$("*").toggleClass( "outline" );
+  
+});
+
+
+
  	 var width = $(window).width();
  	 console.log(width)
  	 	if (width< 767){
@@ -26,6 +35,7 @@ else{
 	alert("password not valid")
 }
 });
+
 
 
 	    });
