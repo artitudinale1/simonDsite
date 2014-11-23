@@ -50,8 +50,7 @@ $container.isotope({
   // options
   itemSelector: '.item',
     masonry: {
-    rowHeight: 570,
-    columnWidth:70
+    columnWidth: 5
   }
 
 });
@@ -60,24 +59,36 @@ $container.isotope({
         var thisEle = $(this);
           $('.item').not(this).find('.more-detail').css('display', 'none');
           $(this).addClass('large');
-       	  $(this).css('width', '600px')
+       	  //$(this).css('width', '600px')
        	  $('.item').not(this).removeClass('large');
        	  $container.isotope('layout');
 
        	  if ( $(this).hasClass('large')) {
        	  	$(this).find('.more-detail').show();
+       	  	$container.isotope('layout');
        	  } else {
        	  	$(this).find('.more-detail').css('display', 'none');
        	  }
-       	  $container.isotope('layout');
+       	 $container.isotope('layout');
        	});
+
+
+   
 }
 else{
 	alert("password not valid")
 }
 });
 
+ $('#close').click(function()  {
+ 		console.log('close')
+       $('.item').removeClass('large');
+       $('.item').find('.more-detail').hide();
+       $container.isotope('layout');
+       $('.item').addClass('item');
+   });
 
+   
 
 	    });
 

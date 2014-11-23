@@ -797,12 +797,18 @@ li:nth-child(4):before{
 }
 
 .large {
-width: 650px;
-opacity: 1;
+  width: 100%;
+  @include respond-wrapper-fallback (tablet, old-ie&){
+      width:800px;
+    }
 
 }
 .large img{
-  width:600px;
+  width:100%;
+   @include respond-wrapper-fallback (tablet, old-ie&){
+      width:800px;
+    }
+  
 
 }
 
