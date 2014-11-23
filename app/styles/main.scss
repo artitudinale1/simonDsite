@@ -785,17 +785,27 @@ li:nth-child(4):before{
 }
 #work #isotope {
   display: none;
-  clear: both;
-  position: relative;
-  top: 50px;
+  
 }
-#work .item {
+.item{
+  margin:5px;
+ 
+}
+
+#work .fourth img {
   width: 100%;
-  float: left;
 }
-#work .item img {
-  width: 100%;
+
+.large {
+width: 650px;
+opacity: 1;
+
 }
+.large img{
+  width:600px;
+
+}
+
 
 /*LET'S */
 #contact{

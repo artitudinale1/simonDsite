@@ -1,5 +1,16 @@
  $( document ).ready(function() {
 
+
+
+
+
+
+
+
+
+
+
+
 $( "#guidelines" ).click(function()  {
 	
  	$("*").toggleClass( "outline" );
@@ -29,7 +40,37 @@ $( "#submit" ).click(function()  {
 	$('#logos').css('display','none');
 	$('#isotope').css('display','block');
 	$('#pass').fadeOut('slow');
-	$('.item').css('height' ,'498px;')
+	//$('.item').css('height' ,'498px;')
+
+
+var $container = $('#container');
+// init
+$container.css('top', '100px');
+$container.isotope({
+  // options
+  itemSelector: '.item',
+    masonry: {
+    rowHeight: 570,
+    columnWidth:70
+  }
+
+});
+
+   $container.on('click', '.item', function(){
+        var thisEle = $(this);
+          $('.item').not(this).find('.more-detail').css('display', 'none');
+          $(this).addClass('large');
+       	  $(this).css('width', '600px')
+       	  $('.item').not(this).removeClass('large');
+       	  $container.isotope('layout');
+
+       	  if ( $(this).hasClass('large')) {
+       	  	$(this).find('.more-detail').show();
+       	  } else {
+       	  	$(this).find('.more-detail').css('display', 'none');
+       	  }
+       	  $container.isotope('layout');
+       	});
 }
 else{
 	alert("password not valid")
