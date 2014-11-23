@@ -16,6 +16,7 @@
     
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+     <link rel="stylesheet" href="styles/bjqs.css">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -45,38 +46,85 @@
 			</div>
 				<div class="col-1-2">
 					<div id="pass"><p>Password:</p>	
-								<input type="password" id="pwd" >
-								<input type="submit" value="Submit" id="submit">
+								<input type="password" id="pwd" onkeydown="if (event.keyCode == 13) document.getElementById('submit').click()" >
+								<input type="submit" value="Submit" id="submit" >
 					</div>
 				</div>	
 				<div class="grid clearfix" id="isotope" class="col-1-1">
 
 
 						<div id="container" class="col-1-1">
-							<div class="item"><img src="images/project/BON_00.jpg">
+							<div class="item">
+								<img src="images/project/BON_00.jpg" class="thumbs">
+								<div class="my-slidershow">
+   									 <ul class="bjqs">
+								        <li><img src="images/Portfolio/BON/BON_00.jpg" title="bon1"></li>	
+								        <li><img src="images/Portfolio/BON/BON_01.jpg" title="bon2"></li>
+								    </ul>
+								</div>
 								<div class="more-detail" style="display: none;">
-									<p class="title"><b> BON </b> </p>
+									 <h1> BAG OF NAILS </h1>
 									<p>
-										<a href="http://bag-o-nails.com/" target="_blank" />Go to the website </a> 
-                   						<a href="#" id="close"> x</a>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu ipsum velit. Sed commodo varius velit, vel consectetur nibh vulputate sed. Donec et nisl eu augue gravida luctus. Integer ut leo at tortor tempus dignissim. Cras sit amet orci est. Fusce nunc turpis, pretium quis dictum at, hendrerit nec eros. Aliquam ac lacus libero. Duis sit amet tortor sed massa efficitur malesuada.<p>
+
+										<p>Etiam posuere rhoncus iaculis. Phasellus a lacinia diam, pulvinar placerat leo. Sed rhoncus placerat ornare. Proin accumsan tempus nunc, ac placerat justo aliquam ullamcorper. Proin ultricies urna sit amet urna pretium, eu pretium nisl porttitor. Vestibulum efficitur eu justo in tincidunt.</p>
+										<p>
+											<a href="http://bag-o-nails.com/" target="_blank" />Go to the website </a> 
+                   							<a href="#" id="close"><img src="images/close.png"/></a>
+                   						</p>
                 					</p>
                 				</div>
                 			</div>
-							<div class="item"><img src="images/project/BT_2012_00.jpg">
+							<div class="item">
+								<img src="images/project/BT_2012_00.jpg" class="thumbs">
+								<div class="my-slidershow">
+   									 <ul class="bjqs">
+								        <li><img src="images/Portfolio/BT2012/BT_2012_00.jpg" title="BT 2012 00"></li>
+								        <li><img src="images/Portfolio/BT2012/BT_2012_01.jpg" title="BT 2012 01"></li>
+								        <li><img src="images/Portfolio/BT2012/BT_2012_02.jpg" title="BT 2012 02"></li>
+								        <li><img src="images/Portfolio/BT2012/BT_2012_03.jpg" title="BT 2012 03"></li>
+								        <li><img src="images/Portfolio/BT2012/BT_2012_04.jpg" title="BT 2012 04"></li>
+								        <li><img src="images/Portfolio/BT2012/BT_2012_05.jpg" title="BT 2012 05"></li>
+								        <li><img src="images/Portfolio/BT2012/BT_2012_06.jpg" title="BT 2012 06"></li>	
+								        <li><img src="images/Portfolio/BT2012/BT_2012_07.jpg" title="BT 2012 07"></li>
+								    </ul>
+								</div>
 								<div class="more-detail" style="display: none;">
-                     				<p class="title"><b>BT 2012</b></p>
+                     				<h1>BT 2012</h1>
                      				<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu ipsum velit. Sed commodo varius velit, vel consectetur nibh vulputate sed. Donec et nisl eu augue gravida luctus. Integer ut leo at tortor tempus dignissim. Cras sit amet orci est. Fusce nunc turpis, pretium quis dictum at, hendrerit nec eros. Aliquam ac lacus libero. Duis sit amet tortor sed massa efficitur malesuada.<p>
+
+										<p>Etiam posuere rhoncus iaculis. Phasellus a lacinia diam, pulvinar placerat leo. Sed rhoncus placerat ornare. Proin accumsan tempus nunc, ac placerat justo aliquam ullamcorper. Proin ultricies urna sit amet urna pretium, eu pretium nisl porttitor. Vestibulum efficitur eu justo in tincidunt.</p>
+										<p>
                      					<a href="#" target="_blank" />Go to the website </a> 
-                   						<a href="#" id="close"> x</a>
+                   						<a href="#" id="close"> <img src="images/close.png"/></a>
                 					</p>
             					</div>
             				</div>
-							<div class="item"><img src="images/project/BT_Tenders_02.jpg">
+							<div class="item">
+								<img src="images/project/BT_Tenders_02.jpg" class="thumbs">
+									<div class="my-slidershow">
+   									 <ul class="bjqs">
+								        <li><img src="images/Portfolio/BTTenders/BT_Tenders_00.jpg" title="BT_tenders 00"></li>
+								        <li><img src="images/Portfolio/BTTenders/BT_Tenders_01.jpg" title="BT_tenders 01"></li>
+								        <li><img src="images/Portfolio/BTTenders/BT_Tenders_02.jpg" title="BT_tenders 02"></li>
+								        <li><img src="images/Portfolio/BTTenders/BT_Tenders_03.jpg" title="BT_tenders 03"></li>
+								        <li><img src="images/Portfolio/BTTenders/BT_Tenders_04.jpg" title="BT_tenders 04"></li>
+								        <li><img src="images/Portfolio/BTTenders/BT_Tenders_05.jpg" title="BT_tenders 05"></li>
+								        <li><img src="images/Portfolio/BTTenders/BT_Tenders_06.jpg" title="BT_tenders 06"></li>
+								       
+								    </ul>
+								</div>
 								 <div class="more-detail" style="display: none;">
-                     				<p class="title"><b> BT Tenders </b> </p>
-                					<p>
+                     				<h1> BT Tenders </h1>
+                
+                						<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu ipsum velit. Sed commodo varius velit, vel consectetur nibh vulputate sed. Donec et nisl eu augue gravida luctus. Integer ut leo at tortor tempus dignissim. Cras sit amet orci est. Fusce nunc turpis, pretium quis dictum at, hendrerit nec eros. Aliquam ac lacus libero. Duis sit amet tortor sed massa efficitur malesuada.<p>
+
+										<p>Etiam posuere rhoncus iaculis. Phasellus a lacinia diam, pulvinar placerat leo. Sed rhoncus placerat ornare. Proin accumsan tempus nunc, ac placerat justo aliquam ullamcorper. Proin ultricies urna sit amet urna pretium, eu pretium nisl porttitor. Vestibulum efficitur eu justo in tincidunt.</p>
+										<p>
                 					   <a href="#" target="_blank" />  Go to the website </a> 
-                  					   <a href="#" id="close"> x</a>
+                  					   <a href="#" id="close"> <img src="images/close.png"/></a>
                   					</p>
                   				</div>
                   			</div>
@@ -85,7 +133,7 @@
                      				<p class="title"><b> Carnaby </b> </p>
                      				<p>
                      					<a href="#" target="_blank" />  Go to the website </a> 
-                   						<a href="#" id="close"> x</a>
+                   						<a href="#" id="close"> <img src="images/close.png"/></a>
                	 					</p>
             					</div>
 							</div>
@@ -94,7 +142,7 @@
                      				<p class="title"><b> DB </b> </p>
                      				<p>
                      					<a href="#" target="_blank" />  Go to the website </a> 
-                   						<a href="#" id="close"> x</a>
+                   						<a href="#" id="close"> <img src="images/close.png"/></a>
                 					</p>
            	 					</div>
            	 				</div>
@@ -103,7 +151,7 @@
                      				<p class="title"><b> EXT </b> </p>
                      				<p>
                      					<a href="#" target="_blank" />  Go to the website </a> 
-                     					<a href="#" id="close"> x</a>
+                     					<a href="#" id="close"> <img src="images/close.png"/></a>
                      				</p>
                      			</div>
                      		</div>
@@ -112,7 +160,7 @@
                      			   <p class="title"><b> George Capital website </b> </p>
                      			   <p>
                      			   	  <a href="http://georgecapital.co.uk/" target="_blank" />  Go to the website </a> 
-                   					  <a href="#" id="close"> x</a>
+                   					  <a href="#" id="close"> <img src="images/close.png"/></a>
                 				   </p>
                                 </div>
                            </div>
@@ -121,7 +169,7 @@
                      			  <p class="title"><b> HSEL website </b> </p>
                 				  <p>
                 				  	<a href="#" target="_blank" />  Go to the website </a> 
-                				  	<a href="#" id="close"> x</a>
+                				  	<a href="#" id="close"> <img src="images/close.png"/></a>
                 				  </p>
                 				</div>
                 			</div>
@@ -130,7 +178,7 @@
 									<p class="title"><b> Jumping </b> </p>
 									<p>
 										<a href="#" target="_blank" />  Go to the website </a> 
-										<a href="#" id="close">x</a>
+										<a href="#" id="close"><img src="images/close.png"/></a>
 									</p>
 								</div>
 							</div>
@@ -139,7 +187,7 @@
 									<p class="title"><b> Logica </b> </p>
 									<p>
 										<a href="#" target="_blank" />  Go to the website </a> 
-										<a href="#" id="close">x</a>
+										<a href="#" id="close"><img src="images/close.png"/></a>
 									</p>
 								</div>
 							</div>
@@ -148,7 +196,7 @@
 									<p class="title"><b> Logo </b> </p>
 									<p>
 										<a href="#" target="_blank" />  Go to the website </a> 
-										<a href="#" id="close">x</a>
+										<a href="#" id="close"><img src="images/close.png"/></a>
 									</p>
 								</div>
 							</div>
@@ -157,7 +205,7 @@
 									<p class="title"><b> Luths </b> </p>
 									<p>
 										<a href="#" target="_blank" />  Go to the website </a> 
-										<a href="#" id="close">x</a>
+										<a href="#" id="close"><img src="images/close.png"/></a>
 									</p>
 								</div>
 							</div>
@@ -166,7 +214,7 @@
 									<p class="title"><b> Packaging </b> </p>
 									<p>
 										<a href="#" target="_blank" />  Go to the website </a> 
-										<a href="#" id="close">x</a>
+										<a href="#" id="close"><img src="images/close.png"/></a>
 									</p>
 								</div>
 							</div>
@@ -175,7 +223,7 @@
 									<p class="title"><b> Piano House </b> </p>
 									<p>
 										<a href="#" target="_blank" />  Go to the website </a> 
-										<a href="#" id="close">x</a>
+										<a href="#" id="close"><img src="images/close.png"/></a>
 									</p>
 								</div>
 							</div>
@@ -184,7 +232,7 @@
 									<p class="title"><b> Shocase </b> </p>
 									<p>
 										<a href="#" target="_blank" />  Go to the website </a> 
-										<a href="#" id="close">x</a>
+										<a href="#" id="close"><img src="images/close.png"/></a>
 									</p>
 								</div>
 							</div>
@@ -193,7 +241,7 @@
 									<p class="title"><b> SMC </b> </p>
 									<p>
 										<a href="#" target="_blank" />  Go to the website </a> 
-										<a href="#" id="close">x</a>
+										<a href="#" id="close"><img src="images/close.png"/></a>
 									</p>
 								</div>
 							</div>
@@ -202,7 +250,7 @@
 									<p class="title"><b> Sodexo </b> </p>
 									<p>
 										<a href="#" target="_blank" />  Go to the website </a> 
-										<a href="#" id="close">x</a>
+										<a href="#" id="close"><img src="images/close.png"/></a>
 									</p>
 								</div>
 							</div>
@@ -211,7 +259,7 @@
 									<p class="title"><b> Ugli </b> </p>
 									<p>
 										<a href="#" target="_blank" />  Go to the website </a> 
-										<a href="#" id="close">x</a>
+										<a href="#" id="close"><img src="images/close.png"/></a>
 									</p>
 								</div>
 							</div>
@@ -220,7 +268,7 @@
 									<p class="title"><b> Welly </b> </p>
 									<p>
 										<a href="#" target="_blank" />  Go to the website </a> 
-										<button id="close"> close</button> 
+										<a href="#" id="close"><img src="images/close.png"/></a>
 									</p>
 								</div>
 							</div>
@@ -279,6 +327,7 @@
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
+        <script src="scripts/bjqs-1.3.min.js"></script>
         <!-- endbuild -->
 </body>
 </html>
