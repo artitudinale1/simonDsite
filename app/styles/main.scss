@@ -157,7 +157,7 @@ $headings:  'Merriweather', serif;
 //COLUMNS FOR TABLET
 
  @include respond-wrapper-fallback (tablet, old-ie&){
-    .col-1-1 {
+    .col-1-1, .col-1-2 {
       width:50%;
     }
 
@@ -322,7 +322,7 @@ nav ul {
       display:inline-block;
       width:auto;
       border:none;
-      padding:0 20px;
+      padding:0 15px;
       top:0;
     }
 
@@ -344,7 +344,7 @@ nav ul {
 
 
   li:before{
-    @include b4-after-icon(35px, 48px, 90px, 0px, 0.5% 3% );
+    @include b4-after-icon(35px, 48px, 60px, 0px, 0.5% 3% );
     @include rollover(0.5% 3%);
     @include respond-wrapper-fallback (tablet, old-ie&){
         @include b4-after-icon(35px, 48px, 0, 2px, 0.5% 3% )
@@ -573,6 +573,7 @@ left: -19%;
    }
 
 #big_arrow{
+  display:none;
  @include respond-wrapper-fallback (desktop, old-ie&){
 display: block;
 width: 66.5%;
