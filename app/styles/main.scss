@@ -796,7 +796,7 @@ li:nth-child(4):before{
   width: 100%;
 }
 
-.large {
+#work .large {
   width: 100%;
   @include respond-wrapper-fallback (tablet, old-ie&){
       width:600px;
@@ -804,7 +804,7 @@ li:nth-child(4):before{
     }
 
 }
-.large > img{
+#work .large > img{
   width:100%;
    @include respond-wrapper-fallback (tablet, old-ie&){
       width:600px;
@@ -813,11 +813,11 @@ li:nth-child(4):before{
   
 
 }
-#close{
-position: absolute;
+.close{
+  position:relative;
 z-index: 2000;
-left: 0;
-top: -381px;
+left: -155px;
+top: -667px;
 img{
 width: 25px !important;
 height: 25px !important;
@@ -869,7 +869,7 @@ top: -18px;
   }
 }
 .my-slidershow{
- visibility:hidden;
+ display:none;
 
 }
 .bjqs{

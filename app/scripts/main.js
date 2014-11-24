@@ -61,7 +61,7 @@ $container.isotope({
 
 
 
- $('.item').on('click', '#close', function() {
+ $('.item').on('click', '.close', function() {
     //  alert('dui')
        $('.item').removeClass('large');
  $('.my-slidershow').css('display', 'none');
@@ -85,6 +85,11 @@ $container.isotope({
         var thisEle = $(this);
           $('.item').not(this).find('.more-detail').css('display', 'none');
           $('.item').removeClass('large');
+            $('.item').removeClass('large');
+ $('.my-slidershow').css('display', 'none');
+ $('.item').find('.more-detail').css('display', 'none');
+            $('.item').find('.thumbs').css('display', 'block');
+          $container.isotope('layout');
          
           $('.item').not(this).find('.thumbs').css('display', 'block');
        	  //$(this).css('width', '600px')

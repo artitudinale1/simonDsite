@@ -814,30 +814,30 @@ h3 {
 #work .fourth img {
   width: 100%; }
 
-.large {
+#work .large {
   width: 100%; }
-  .old-ie .large {
+  .old-ie #work .large {
     width: 600px;
     min-height: 750px; }
   @media only screen and (min-width: 767px) {
-    .large {
+    #work .large {
       width: 600px;
       min-height: 750px; } }
 
-.large > img {
+#work .large > img {
   width: 100%; }
-  .old-ie .large > img {
+  .old-ie #work .large > img {
     width: 600px; }
   @media only screen and (min-width: 767px) {
-    .large > img {
+    #work .large > img {
       width: 600px; } }
 
-#close {
-  position: absolute;
+.close {
+  position: relative;
   z-index: 2000;
-  left: 0;
-  top: -381px; }
-  #close img {
+  left: -155px;
+  top: -667px; }
+  .close img {
     width: 25px !important;
     height: 25px !important; }
 
@@ -883,7 +883,7 @@ ol.bjqs-markers .active-marker a:after {
     margin-bottom: 30px; }
 
 .my-slidershow {
-  visibility: hidden; }
+  display: none; }
 
 .bjqs {
   height: 380px !important; }
