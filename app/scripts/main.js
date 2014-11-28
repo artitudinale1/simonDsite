@@ -30,9 +30,8 @@ $( "#submit" ).click(function()  {
                 $container.isotope({
                     // options
                     itemSelector: '.item',
-                    masonry: {
-                        columnWidth: 5
-                    }
+                 
+
                 });
 
                 $('.item').on('click', '.close', function() {
@@ -40,6 +39,7 @@ $( "#submit" ).click(function()  {
                     $('.my-slidershow').css('display', 'none');
                     $('.item').find('.more-detail').css('display', 'none');
                     $('.item').find('.thumbs').css('display', 'block');
+                    $('.item').find('.close').css('display', 'none');
                     $container.isotope('layout');
                     return false
                 });
@@ -48,7 +48,7 @@ $( "#submit" ).click(function()  {
                   var thisEle = $(this);
                   $('.item').not(this).find('.more-detail').css('display', 'none');
                   $('.item').removeClass('large');
-                  $('.item').removeClass('large');
+                  $('.item').find('.close').css('display', 'none');
                   $('.my-slidershow').css('display', 'none');
                   $('.item').find('.more-detail').css('display', 'none');
                   $('.item').find('.thumbs').css('display', 'block');
@@ -62,6 +62,7 @@ $( "#submit" ).click(function()  {
                         $(this).find('.more-detail').css('display', 'block');
                         $(this).find('.more-detail').show();
            	  	        $(this).find('.thumbs').css('display', 'none');
+                        $(this).find('.close').css('display', 'block');
            	  	        $(this).find('.my-slidershow').css('visibility', 'visible');
                         $(this).find('.my-slidershow').css('display', 'block');
            	  	        $container.isotope('layout');
@@ -79,9 +80,9 @@ $( "#submit" ).click(function()  {
        //GALLERIES ON EACH ISOTOPE ELEMENTS
       $('.item').find('.my-slidershow').each(function (i) {
           $(this).bjqs({       
-              'width' : 600,
-              'height' : 600,
-              'responsive' : true,
+              'width' : '100%',
+//              'height' : 381,
+             //'responsive' : true,
               'usecaptions' : true, // show captions for images using the image title tag
               'nexttext' : '<img class="gallery-controller" src="../images/next.png"/>', // Text for 'next' button (can use HTML)
               'prevtext' : '<img class="gallery-controller" src="../images/prev.png"/>', // Text for 'previous' button (can use HTML)
