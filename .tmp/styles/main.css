@@ -88,9 +88,23 @@
   width: 50%; }
 .old-ie #about #content .col-1-3:first-child {
   margin-right: 50%; }
-.old-ie #about .col-1-1:nth-child(3) {
+.old-ie #about #edul .col-1-3:nth-child(7) {
+  clear: both;
   position: relative;
-  top: 0px; }
+  top: 100px; }
+.old-ie #about .col-1-1:nth-child(2) .col-1-3:nth-child(1) {
+  clear: both;
+  float: left;
+  top: -200px;
+  position: relative;
+  left: 32%; }
+.old-ie #about .col-1-1:nth-child(2) .col-1-3:nth-child(2) {
+  left: 63%;
+  top: -450px; }
+.old-ie #about .col-1-1:nth-child(2) .col-1-3:nth-child(3) {
+  float: right;
+  position: relative;
+  top: -200px; }
 .old-ie .fourth {
   width: 25%;
   float: left; }
@@ -112,9 +126,26 @@
   #about #content .col-1-3:first-child {
     margin-right: 50%; }
 
-  #about .col-1-1:nth-child(3) {
+  #about #edul .col-1-3:nth-child(7) {
+    clear: both;
     position: relative;
-    top: 0px; }
+    top: 100px; }
+
+  #about .col-1-1:nth-child(2) .col-1-3:nth-child(1) {
+    clear: both;
+    float: left;
+    top: -200px;
+    position: relative;
+    left: 32%; }
+
+  #about .col-1-1:nth-child(2) .col-1-3:nth-child(2) {
+    left: 63%;
+    top: -450px; }
+
+  #about .col-1-1:nth-child(2) .col-1-3:nth-child(3) {
+    float: right;
+    position: relative;
+    top: -200px; }
 
   .fourth {
     width: 25%;
@@ -148,6 +179,11 @@ header {
   padding-bottom: 20px;
   /* Height of the footer element */
   margin: 0 auto; }
+  .old-ie #content {
+    padding-bottom: 0; }
+  @media only screen and (min-width: 767px) {
+    #content {
+      padding-bottom: 0; } }
 
 footer {
   width: 100%;
@@ -444,11 +480,15 @@ h1:before {
   text-transform: uppercase; }
   .old-ie #simon {
     font-size: 5em;
-    line-height: 1em; }
+    line-height: 0;
+    padding: 10px 15px 0;
+    margin-bottom: 60px; }
   @media only screen and (min-width: 1100px) {
     #simon {
       font-size: 5em;
-      line-height: 1em; } }
+      line-height: 0;
+      padding: 10px 15px 0;
+      margin-bottom: 60px; } }
 
 p {
   font-family: "Raleway", sans-serif;
@@ -461,7 +501,8 @@ small {
   padding: 0 0 30px 0;
   font-size: 1em;
   text-transform: uppercase;
-  line-height: 1em; }
+  line-height: 1em;
+  font-style: italic; }
   .old-ie small {
     padding: 0 20px; }
   @media only screen and (min-width: 767px) {
@@ -591,7 +632,8 @@ h2 {
     margin: 10px auto;
     position: relative;
     left: -39px;
-    border-left: 5px solid  #bababb; }
+    border-left: 5px solid  #bababb;
+    top: 400px; }
   @media only screen and (min-width: 1100px) {
     #big_arrow {
       display: block;
@@ -601,7 +643,8 @@ h2 {
       margin: 10px auto;
       position: relative;
       left: -39px;
-      border-left: 5px solid  #bababb; } }
+      border-left: 5px solid  #bababb;
+      top: 400px; } }
 
 #big_arrow:before {
   content: " ";
@@ -774,11 +817,81 @@ h3 {
   #funfscts-icons li:nth-child(4):before {
     background-position: -93px -341px; }
 
+.no-mobile {
+  display: none; }
+  .old-ie .no-mobile {
+    display: block; }
+  @media only screen and (min-width: 767px) {
+    .no-mobile {
+      display: block; } }
+
 .old-ie .no-tablet {
   display: none; }
 @media only screen and (min-width: 767px) {
   .no-tablet {
     display: none; } }
+
+#about #first-bg {
+  display: none; }
+  .old-ie #about #first-bg {
+    display: block;
+    background: url(../images/work-bg-1.png) no-repeat;
+    position: absolute;
+    width: 300px;
+    height: 253px;
+    top: 673px;
+    left: 11%;
+    opacity: 0.5;
+    z-index: -1; }
+  @media only screen and (min-width: 767px) {
+    #about #first-bg {
+      display: block;
+      background: url(../images/work-bg-1.png) no-repeat;
+      position: absolute;
+      width: 300px;
+      height: 253px;
+      top: 673px;
+      left: 11%;
+      opacity: 0.5;
+      z-index: -1; } }
+  .old-ie #about #first-bg {
+    top: 264px;
+    left: 39%; }
+  @media only screen and (min-width: 1100px) {
+    #about #first-bg {
+      top: 264px;
+      left: 39%; } }
+
+#about #second-bg {
+  display: none; }
+  .old-ie #about #second-bg {
+    display: block;
+    background: url(../images/work-bg-2.png) no-repeat;
+    position: absolute;
+    width: 300px;
+    height: 253px;
+    top: 200px;
+    left: 53%;
+    opacity: 0.5;
+    z-index: -1; }
+  @media only screen and (min-width: 767px) {
+    #about #second-bg {
+      display: block;
+      background: url(../images/work-bg-2.png) no-repeat;
+      position: absolute;
+      width: 300px;
+      height: 253px;
+      top: 200px;
+      left: 53%;
+      opacity: 0.5;
+      z-index: -1; } }
+  .old-ie #about #second-bg {
+    top: 701px;
+    left: 34%; }
+  @media only screen and (min-width: 1100px) {
+    #about #second-bg {
+      top: 701px;
+      left: 34%; } }
 
 /*   WORK      */
 #work h1 {
@@ -811,13 +924,10 @@ h3 {
   height: 30px;
   border: 0px; }
 
-#work #isotope {
-  display: none; }
-
 .item {
   margin: 5px;
   width: 100%;
-  display: inline-block; }
+  display: none; }
   .old-ie .item {
     width: 20%;
     float: left; }
@@ -899,12 +1009,17 @@ ol.bjqs-markers li a {
   color: #3499b8; }
 
 ol.bjqs-markers li a:after {
-  content: ' ';
-  background: url("../images/no-active-pix.png") no-repeat;
-  visibility: visible;
+  position: absolute;
   display: block;
-  text-decoration: none;
-  color: #3499b8;
+  background: url(../images/spry.png) no-repeat;
+  content: '';
+  height: 10px;
+  left: 0;
+  width: 10px;
+  top: -18px;
+  background-position: 0% 0%; }
+
+ol.bjqs-markers .active-marker a:after {
   position: absolute;
   display: block;
   background: url(../images/spry.png) no-repeat;
@@ -922,15 +1037,16 @@ ol.bjqs-markers .active-marker a:after {
   display: block;
   text-decoration: none;
   color: #3499b8;
-  position: absolute;
+  position: relative !important; }
+
+ol.bjqs-markers li a:after, ol.bjqs-markers li a:before {
+  content: ' ';
+  background: url("../images/no-active-pix.png") no-repeat;
+  visibility: visible;
   display: block;
-  background: url(../images/spry.png) no-repeat;
-  content: '';
-  height: 10px;
-  left: 0;
-  width: 10px;
-  top: -18px;
-  background-position: 0% 0%; }
+  text-decoration: none;
+  color: #3499b8;
+  position: relative !important; }
 
 p.bjqs-caption {
   top: 351px;
@@ -940,7 +1056,8 @@ p.bjqs-caption {
 #contact {
   color: #3499b8;
   text-decoration: none;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  margin-left: 10px; }
 
 #contact:before {
   background: url(../images/spry.png);
@@ -951,7 +1068,10 @@ p.bjqs-caption {
   vertical-align: middle;
   background-position: -126px -411px; }
 
-.splat {
+#home .splat {
+  background: none; }
+
+#letstalk .splat, #work .splat, #about .splat {
   position: absolute;
   width: 271px;
   background: url(../images/splat.png) no-repeat;
@@ -959,6 +1079,23 @@ p.bjqs-caption {
   top: -140px;
   float: right;
   right: 0px; }
+
+.prefooter {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  border-top: 2px solid #444444;
+  font-size: 1.3em; }
+  .prefooter p span {
+    font-weight: 800;
+    color: #fbb03b !important; }
+  .prefooter p {
+    color: #fbb03b;
+    margin: 0;
+    padding: 0; }
 
 #guidelines {
   position: absolute;
